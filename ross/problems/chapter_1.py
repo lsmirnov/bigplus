@@ -11,6 +11,7 @@ from math import comb as c, factorial as f
 # c) How many codes starting with a 1 are possible?
 
 print(f"Problem 5a: {10**3}, 5b: {10 * 9 * 8}, 5c: {10**2}")
+# 5a: 1000, 5b: 720, 5c: 100
 
 # Problem 12
 
@@ -19,6 +20,7 @@ print(f"Problem 5a: {10**3}, 5b: {10 * 9 * 8}, 5c: {10**2}")
 # b) How many have exactly 2 equal digits?
 
 print(f"Problem 12a: {10**3 - 10 * 9 * 8}, 12b: {10**3 - 10 * 9 * 8 - 10}")
+# 12a: 280, 12b: 270
 
 # Problem 20
 
@@ -28,6 +30,7 @@ print(f"Problem 12a: {10**3 - 10 * 9 * 8}, 12b: {10**3 - 10 * 9 * 8 - 10}")
 # How many teams are possible?
 
 print(f"Problem 20: {c(10, 2) * c(8, 3) * c(7, 4)}")
+# 88200
 
 # Problem 22
 
@@ -38,6 +41,7 @@ print(f"Problem 20: {c(10, 2) * c(8, 3) * c(7, 4)}")
 # DON'T FORGET ABOUT A CASE WITH NONE OF THE TWO ATTENDING
 
 print(f"Problem 22a: {2 * c(6, 4) + 6}, 22b: {c(6, 3) + 6}")
+# 22a: 36, 22b: 26
 
 # Problem 23
 
@@ -48,6 +52,7 @@ print(f"Problem 22a: {2 * c(6, 4) + 6}, 22b: {c(6, 3) + 6}")
 # How many different paths from A to B are possible?
 
 print(f"Problem 23: {c(4 + 3, 3)}")
+# 35
 
 # Problem 24
 
@@ -55,6 +60,7 @@ print(f"Problem 23: {c(4 + 3, 3)}")
 # that go through the point circled in the following lattice?
 
 print(f"Problem 24: {c(2 + 2, 2) + c(2 + 1, 1)}")
+# 9
 
 # Problem 31
 
@@ -63,6 +69,7 @@ print(f"Problem 24: {c(2 + 2, 2) + c(2 + 1, 1)}")
 # b) What if each friend should receive at least 3 gifts?
 
 print(f"Problem 31a: {c(10 + 3 - 1, 3 - 1)}, 31b: {c(10 - 9 + 3 - 1, 2)}")
+# 31a: 66, 31b: 3
 
 # Problem 32
 
@@ -79,6 +86,7 @@ print(
     f"Problem 32a: {f(10) // (f(3) * f(4) * f(2) * f(1))}, "
     f"32b: {c(3, 1) * c(3, 2) * f(7) // (f(4) * f(2) * f(1))}"
 )
+# 32a: 12600, 32b: 945
 
 # Problem 34
 
@@ -87,6 +95,7 @@ print(
 # b) How many if each school must receive at least 1 blackboard?
 
 print(f"Problem 34a: {c(8 + 4 - 1, 4 - 1)}, 34b: {c(8 - 1, 4 - 1)}")
+# 34a: 165, 34b: 35
 
 # Problem 36
 
@@ -108,3 +117,4 @@ b = (
     + c(20 - 7 + 3 - 1, 2)
 )
 print(f"Problem 36a: {a}, 36b: {b}")
+# 36a: 220, 36b: 572
