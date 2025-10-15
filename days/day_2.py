@@ -109,11 +109,11 @@ def matrix_multiplication(
         vector_a (list[list[int]]): A matrix of integers
 
     Returns:
-        int: A dot product of 2 vectors
+        list[list[int]]: A product of matrices multiplication
 
     Complexity:
-        Time: O(n)
-        Space: O(1)
+        Time: O(n^3)
+        Space: O(n^2)
         '''
     rows_a, cols_a = len(matrix_a), len(matrix_a[0])
     rows_b, cols_b = len(matrix_b), len(matrix_b[0])
@@ -185,6 +185,16 @@ def is_valid(s: str) -> bool:
     '''
     Given a string s containing just the characters '(', ')', '{', '}', '['
     and ']', determines if the input string is valid.
+
+    Args:
+        s (str): A string with brackets
+
+    Returns:
+        bool: True if the input string is valid, False otherwise
+
+    Complexity:
+        Time: O(n)
+        Space: O(n)
     '''
     if len(s) % 2:
         return False
@@ -223,6 +233,16 @@ def is_valid_v2(s: str) -> bool:
     '''
     Given a string s containing just the characters '(', ')', '{', '}', '['
     and ']', determines if the input string is valid.
+
+    Args:
+        s (str): A string with brackets
+
+    Returns:
+        bool: True if the input string is valid, False otherwise
+
+    Complexity:
+        Time: O(n)
+        Space: O(n)
     '''
     if len(s) % 2:
         return False
