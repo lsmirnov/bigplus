@@ -40,7 +40,7 @@ print(f"Problem 20: {c(10, 2) * c(8, 3) * c(7, 4)}")
 # b) How many choices if 2 of the friends will only attend together?
 # DON'T FORGET ABOUT A CASE WITH NONE OF THE TWO ATTENDING
 
-print(f"Problem 22a: {2 * c(6, 4) + 6}, 22b: {c(6, 3) + 6}")
+print(f"Problem 22a: {2 * c(6, 4) + c(6, 5)}, 22b: {c(6, 3) + c(6, 5)}")
 # 22a: 36, 22b: 26
 
 # Problem 23
@@ -68,7 +68,7 @@ print(f"Problem 24: {c(2 + 2, 2) + c(2 + 1, 1)}")
 # how many distributions are possible?
 # b) What if each friend should receive at least 3 gifts?
 
-print(f"Problem 31a: {c(10 + 3 - 1, 3 - 1)}, 31b: {c(10 - 9 + 3 - 1, 2)}")
+print(f"Problem 31a: {c(10 + 3 - 1, 3 - 1)}, 31b: {c(10 - 3 * 3 + 3 - 1, 2)}")
 # 31a: 66, 31b: 3
 
 # Problem 32
@@ -94,7 +94,7 @@ print(
 # how many divisions are possible?
 # b) How many if each school must receive at least 1 blackboard?
 
-print(f"Problem 34a: {c(8 + 4 - 1, 4 - 1)}, 34b: {c(8 - 1, 4 - 1)}")
+print(f"Problem 34a: {c(8 + 4 - 1, 4 - 1)}, 34b: {c(8 - 4 * 1 + 4 - 1, 4 - 1)}")
 # 34a: 165, 34b: 35
 
 # Problem 36
