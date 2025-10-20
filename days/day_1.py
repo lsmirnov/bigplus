@@ -83,6 +83,8 @@ cleaned_text = re.sub(r"[^a-zA-ZÀ-ÿ0-9'\s-]", "", TEXT.lower()).split()
 frequencies = Counter(cleaned_text)
 print(frequencies)
 
+# 1. Two Sum
+
 # Given an array of integers nums and an integer target, return indices
 # of the two numbers such that they add up to target.
 
@@ -102,7 +104,7 @@ print(frequencies)
 # Input: nums = [3,3], target = 6. Output: [0,1]
 
 def two_sum(nums: list[int], target: int) -> Optional[list[int]]:
-    '''
+    """
     Return the indices of the two numbers that add up to the target.
 
     This function finds two distinct indices i and j in the input list `nums`
@@ -122,7 +124,7 @@ def two_sum(nums: list[int], target: int) -> Optional[list[int]]:
     Complexity:
         Time: O(n)
         Space: O(n)
-    '''
+    """
     seen: dict[int, int] = {}
     for i, num in enumerate(nums):
         complement = target - num

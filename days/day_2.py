@@ -101,7 +101,7 @@ def manual_dot (vector_a: list[int], vector_b: list[int]) -> int:
 def matrix_multiplication(
         matrix_a: list[list[int]], matrix_b: list[list[int]]
 ) -> list[list[int]]:
-    '''
+    """
     Return the product of 2 matrices multiplication
 
     Args:
@@ -114,7 +114,7 @@ def matrix_multiplication(
     Complexity:
         Time: O(n^3)
         Space: O(n^2)
-        '''
+    """
     rows_a, cols_a = len(matrix_a), len(matrix_a[0])
     rows_b, cols_b = len(matrix_b), len(matrix_b[0])
 
@@ -154,7 +154,6 @@ print("NumPy:", np.dot(matrix_A, matrix_B))
 # Open brackets must be closed by the same type of brackets.
 # Open brackets must be closed in the correct order.
 # Every close bracket has a corresponding open bracket of the same type.
- 
 
 # Example 1:
 # Input: s = "()"
